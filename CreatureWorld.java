@@ -106,19 +106,19 @@ public class CreatureWorld extends World
         }
         else if( turnNumber == 1 )
         {
-            showText( playerOneName + " , your turn", getWidth()/2, getHeight()/2);
+            showText( playerOneName + " , Your turn", getWidth()/2, getHeight()/2);
             showText( "", getWidth()/2, getHeight()/2 + 26);
         }
         else
         {
-            showText( playerTwoName + " , your turn", getWidth()/2, getHeight()/2);
+            showText( playerTwoName + " , Your turn", getWidth()/2, getHeight()/2);
             showText( "", getWidth()/2, getHeight()/2 + 26);
         }
         
         if( playerTwoCreature.getHealthBar().getCurrent() <= 0 )
         {
             showText( "", getWidth()/2, getHeight()/2);
-            showText("player one has won!!", getWidth()/2, getHeight()/2 + 26);
+            showText("Player One has won!!", getWidth()/2, getHeight()/2 + 26);
             Greenfoot.stop();
            
             removeObjects(allObjects);
@@ -127,7 +127,7 @@ public class CreatureWorld extends World
         if( playerOneCreature.getHealthBar().getCurrent() <= 0 )
         {
             showText( "", getWidth()/2, getHeight()/2);
-            showText("player two has won!!", getWidth()/2, getHeight()/2 + 26);
+            showText("Player Two has won!!", getWidth()/2, getHeight()/2 + 26);
             Greenfoot.stop();
            
             removeObjects(allObjects);
