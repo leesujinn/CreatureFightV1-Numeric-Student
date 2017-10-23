@@ -1,0 +1,10 @@
+ private void prepareCreatures()
+    {
+        addObject(playerOneCreature, playerOneCreature.getImage().getWidth()/2, getHeight() - playerOneCreature.getImage().getHeight()/2);
+        addObject( new Button(Color.RED, 50), 265, 685 );    
+     
+        addObject(playerTwoCreature, getWidth() - playerTwoCreature.getImage().getWidth()/2, playerTwoCreature.getImage().getHeight()/2);
+        addObject( new Button(Color.RED, 50), 540, 85 );
+    }
+
+
