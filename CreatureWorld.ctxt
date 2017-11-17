@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=CreatureWorld
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ MyWorld\ here.\r\n\ \r\n\ Name\:\ SuJin\ Lee\r\n\ Course\:\ CS20S\r\n\ Teacher\:\ Mr.Hardman\r\n\ Lab\#2,\ Program\ \#1\r\n\ Date\ Last\ Modified\:\ 10/23/2017\r\n\ \r\n
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ MyWorld\ here.\r\n\ \r\n\ Name\:\ SuJin\ Lee\r\n\ Course\:\ CS20S\r\n\ Teacher\:\ Mr.Hardman\r\n\ Lab\#3,\ Program\ \#1\r\n\ Date\ Last\ Modified\:\ 10/23/2017\r\n\ \r\n
 comment1.params=
 comment1.target=CreatureWorld()
 comment1.text=\r\n\ Default\ constructor\ for\ objects\ of\ class\ MyWorld.\r\n\ \r\n\ @param\ There\ are\ no\ parameters\r\n\ @return\ an\ object\ of\ class\ MyWorld\r\n

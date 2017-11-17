@@ -9,8 +9,8 @@ import java.util.List;
  * Name: SuJin Lee
  * Course: CS20S
  * Teacher: Mr.Hardman
- * Lab#2, Program #1
- * Date Last Modified: 10/23/2017
+ * Lab#3, Program #1
+ * Date Last Modified: 11/17/2017
  * 
  */
 public class CreatureWorld extends World
