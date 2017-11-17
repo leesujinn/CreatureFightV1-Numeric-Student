@@ -21,6 +21,8 @@ public class Menu extends Actor
     private Color secondBG;
     private int titleHeight;
     private int menuHeight;
+    private boolean start;
+    private boolean isPlayerOneTurn;
     
     public Menu( String tb, String i, int fs, Color mfg, Color mbg, Color sfg, Color sbg, MenuCommands mc )
     {
@@ -62,8 +64,9 @@ public class Menu extends Actor
     {
         CreatureWorld world = (CreatureWorld)getWorld();
         int distance;
+        //world.getTurnNumber() == 1
         
-        if( world.getTurnNumber() == 1 )
+        if( start == true )
         {
             if(titleBar.getText().equalsIgnoreCase("Fight") )
             {

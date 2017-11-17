@@ -1,0 +1,10 @@
+ else if( start == true )
+        {
+            showText( playerOneName + " , Your turn", getWidth()/2, getHeight()/2);
+            showText( "", getWidth()/2, getHeight()/2 + 26);
+        }
+        else
+        {
+            showText( playerTwoName + " , Your turn", getWidth()/2, getHeight()/2);
+            showText( "", getWidth()/2, getHeight()/2 + 26);
+        }

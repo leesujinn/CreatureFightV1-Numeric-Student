@@ -8,9 +8,11 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Pikachu extends Creature
 {
+    private boolean playerOneTurn;
+    
     public Pikachu( World w )
     {
-        super(650, 2, "Electric");
+        super(650, false, "Electric");
         getImage().scale(150, 100);
        
         w.addObject( getHealthBar(), 500, 25 ); 
@@ -30,7 +32,7 @@ public class Pikachu extends Creature
         {
             enemy.getHealthBar().add( -65 );
         }
-        world.setTurnNumber(1);
+        playerOneTurn = true;
     }
     
     

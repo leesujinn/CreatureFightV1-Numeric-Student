@@ -50,13 +50,6 @@ public class Button extends Actor
         setImage( buttonImage1 );
     }
 
-    /**
-     * Button constructor that allows for customization of Button objects
-     * 
-     * @param c is the Color that the Button will have
-     * @param v is the numerical value that is associated with the button
-     * @return an object of the Button type
-     */
     public Button( Color c, int v )
     {
         GreenfootImage text1 = new GreenfootImage(100 , 50);
@@ -103,7 +96,7 @@ public class Button extends Actor
         CreatureWorld world = (CreatureWorld)getWorld();
         Creature enemy;
         
-        if( getObjectsInRange(200,Creature.class).get(0).getPlayerOwnership() == 1)
+        if( getObjectsInRange(200,Creature.class).get(0).getWhetherPlayerOne() == true)
         {
             enemy = world.getPlayerTwo();
         }

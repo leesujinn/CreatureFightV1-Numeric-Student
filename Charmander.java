@@ -8,9 +8,11 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Charmander extends Creature
 {
+    private boolean playerOneTurn;
+    
     public Charmander( World w )
     {
-        super(700, 1, "Fire");
+        super(700, true, "Fire");
         getImage().scale(150, 100);
        
         w.addObject( getHealthBar(), 300, w.getHeight() - 50 );
@@ -30,7 +32,8 @@ public class Charmander extends Creature
         {
             enemy.getHealthBar().add( -70 );
         }
-        world.setTurnNumber(2);
+        
+        playerOneTurn = false;
     }
     
     /**
