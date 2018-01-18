@@ -1,8 +1,8 @@
 #BlueJ class context
-comment0.target=Pikachu
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ Pikachu\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.target=Ivysaur
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ ghukmkl\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
 comment1.params=w
-comment1.target=Pikachu(greenfoot.World)
+comment1.target=Ivysaur(greenfoot.World)
 comment2.params=idx
 comment2.target=void\ attack(int)
 comment2.text=\r\n\ attack\ is\ about\ the\ attack\ movement\ of\ the\ Character\r\n\ \r\n\ @param\ about\ the\ variety\ attacks\ \r\n\ @return\ Nothing\ is\ returned\r\n
@@ -17,5 +17,5 @@ comment5.target=void\ switchedIn()
 comment5.text=\r\n\ switchedIn\ is\ about\ the\ changing\ character's\ image\r\n\ \r\n\ @param\ There\ are\ no\ parameters\r\n\ @return\ Nothing\ is\ returned\r\n
 comment6.params=
 comment6.target=void\ act()
-comment6.text=\r\n\ Act\ -\ do\ whatever\ the\ Pikachu\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+comment6.text=\r\n\ Act\ -\ do\ whatever\ the\ ghukmkl\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
 numComments=7

@@ -38,21 +38,39 @@ public class Creature extends Actor
     public Creature( int health, boolean isPlayerOne, String creatureType )
     {
         healthNumber = health;
-        playerOneCreature = true;
+        playerOneCreature = isPlayerOne;
         creatureBar = new HealthBar( healthNumber, healthNumber, 10 );
         type = creatureType;
     }
     
+    /**
+     * getHealthBar will get HealthBar each player Creature
+     * 
+     * @param There are no parameters
+     * @return healthbar on the Creature
+     */
     protected HealthBar getHealthBar()
     {
         return creatureBar;
     }
     
+    /**
+     * getWhetherPlayerOne will tell it is true or false
+     * 
+     * @param There are no parameters
+     * @return on playerOneCreature
+     */
     public boolean getWhetherPlayerOne()
     {
         return playerOneCreature;
     }
     
+    /**
+     * getType will get type
+     * 
+     * @param There are no parameters
+     * @return to type
+     */
     public String getType()
     {
         return type;
@@ -66,6 +84,16 @@ public class Creature extends Actor
      * @return Nothing is returned
      */
     public void attack( int idx )
+    {
+         //empty method that will get overriden in subclasses
+    }
+    
+    public void switchCreature( int idx )
+    {
+         //empty method that will get overriden in subclasses
+    }
+    
+    public void switchedIn (  )
     {
          //empty method that will get overriden in subclasses
     }

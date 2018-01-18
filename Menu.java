@@ -21,7 +21,6 @@ public class Menu extends Actor
     private Color secondBG;
     private int titleHeight;
     private int menuHeight;
-    private boolean start;
     private boolean isPlayerOneTurn;
     
     public Menu( String tb, String i, int fs, Color mfg, Color mbg, Color sfg, Color sbg, MenuCommands mc )
@@ -60,59 +59,95 @@ public class Menu extends Actor
         handleMouse();
     } 
     
+    /**
+     * handleMouse will control of the mouse movement
+     * 
+     * @param There are no parameters
+     * @return Nothing is returned
+     */
     private void handleMouse()
     {
         CreatureWorld world = (CreatureWorld)getWorld();
         int distance;
         //world.getTurnNumber() == 1
         
-        if( start == true )
+        if( world.isPlayerOneTurn() == true )
         {
             if(titleBar.getText().equalsIgnoreCase("Fight") )
             {
-                distance = 250;
+                distance = 10;
             }
             else
             {
-                distance = 400;    
+                distance = 195;    
             }
         }
         else
         {
             if(titleBar.getText().equalsIgnoreCase("Fight") )
             {
-                distance = 650;
+                distance = 350;
             }
             else
-            {
-                distance = 400;    
+        {
+                distance = 195;    
             }
         }
         
-        if( Greenfoot.mouseClicked(titleBar) )
-        {
-            if( visible == false )
+
+        if( getObjectsInRange(distance, Creature.class).get(0).getWhetherPlayerOne() == true && world.isPlayerOneTurn() == true)
+        {               
+            if( Greenfoot.mouseClicked(titleBar) )
             {
-                getWorld().addObject( menuItems, getX(), getY() + (titleHeight + menuHeight)/2 );
-            }
-            else
-            {
-                getWorld().removeObject( menuItems );
-            }
+                if( visible == false )
+                {
+                    getWorld().addObject( menuItems, getX(), getY() + (titleHeight + menuHeight)/2 );
+                }
+                else
+                {
+                    getWorld().removeObject( menuItems );
+                }
             
-            visible = !visible;
+                visible = !visible;
+            }  
+            if( Greenfoot.mouseClicked(menuItems) )
+            {
+                MouseInfo mi = Greenfoot.getMouseInfo();
+                int menuIndex = ( (mi.getY() - menuItems.getY() + menuHeight / 2 ) - 1) / fontSize;
+                
+                visible = !visible;
+                getWorld().removeObject(menuItems);
+                commands.execute(menuIndex, world.getPlayerOne());
+            }
         }
+        else if( getObjectsInRange(distance, Creature.class).get(0).getWhetherPlayerOne() == false && world.isPlayerOneTurn() == false )
+        {
+            if( Greenfoot.mouseClicked(titleBar) )
+            {
+                if( visible == false )
+                {
+                    getWorld().addObject( menuItems, getX(), getY() + (titleHeight + menuHeight)/2 );
+                }
+                else
+                {
+                    getWorld().removeObject( menuItems );
+                }
+            
+                visible = !visible;
+            }  
+            if( Greenfoot.mouseClicked(menuItems) )
+            {
+                MouseInfo mi = Greenfoot.getMouseInfo();
+                int menuIndex = ( (mi.getY() - menuItems.getY() + menuHeight / 2 ) - 1) / fontSize;
+                
+                visible = !visible;
+                getWorld().removeObject(menuItems);
+                commands.execute(menuIndex, world.getPlayerTwo());
+            }
+        }
+       
         
-        if( Greenfoot.mouseClicked(menuItems) )
-        {
-            MouseInfo mi = Greenfoot.getMouseInfo();
-            int menuIndex = ( (mi.getY() - menuItems.getY() + menuHeight / 2 ) - 1) / fontSize;
-            
-            visible = !visible;
-            getWorld().removeObject(menuItems);
-            commands.execute(menuIndex, getObjectsInRange( distance, Creature.class ).get(0));
-        }
     }
-    }
+}
     
 

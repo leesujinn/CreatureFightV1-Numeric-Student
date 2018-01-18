@@ -262,6 +262,17 @@ public class HealthBar extends Actor
         return current;
     }
     
+     /**
+     * getTarget returns the current health value for use in other sections of code or for the user's information
+     * 
+     * @param There are no parameters
+     * @return an integer representing the current Target value
+     */
+    public int getTarget()
+    {
+        return target;
+    }
+    
     
     
 

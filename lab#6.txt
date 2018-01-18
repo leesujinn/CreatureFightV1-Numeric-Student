@@ -1,0 +1,15 @@
+In CreatureWorld:
+//void prepareCreatures()
+//void setTurn( boolean isPlayerOne )
+//boolean getTurn()
+Creature getPlayerOne()
+Creature getPlayerTwo()
+void changePlayerOne( String creature )
+void changePlayerTwo( String creature )
+Creature getNewOneCreature( int index )
+Creature getNewTwoCreature( int index )
+boolean getStart()
+
+
+@param There are no parameters
+     * @return Nothing is returned

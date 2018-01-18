@@ -31,6 +31,12 @@ public class TextBox extends Actor
         display();
     }
     
+    /**
+     * display will display image and text
+     * 
+     * @param There are no parameters
+     * @return Nothing is returned
+     */
     private void display()
     {
         
@@ -43,11 +49,23 @@ public class TextBox extends Actor
         setImage( img );
     }
     
+    /**
+     * gettext will get Text om CreatureWorld
+     * 
+     * @param There are no parameters
+     * @return show the text
+     */
     public String getText()
     {
         return text;
     }
     
+    /**
+     * setText will set Text on CreatureWorld
+     * 
+     * @param list the text looks good
+     * @return Nothing is returned
+     */
     public void setText( String message )
     {
         text = message;

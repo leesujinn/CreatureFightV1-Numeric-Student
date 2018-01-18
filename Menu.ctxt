@@ -12,4 +12,5 @@ comment4.target=void\ act()
 comment4.text=\r\n\ Act\ -\ do\ whatever\ the\ Menu\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
 comment5.params=
 comment5.target=void\ handleMouse()
+comment5.text=\r\n\ handleMouse\ will\ control\ of\ the\ mouse\ movement\r\n\ \r\n\ @param\ There\ are\ no\ parameters\r\n\ @return\ Nothing\ is\ returned\r\n
 numComments=6
